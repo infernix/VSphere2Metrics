@@ -53,7 +53,7 @@ class VSphere2Metrics {
   MetricClient mc,mcG,mcI
   LinkedHashMap selfMon = [:]
 
-  Closure cleanName = { String str -> str?.split('\\.')?.getAt(0)?.trim().replaceAll(~/[\s-\.]/, "-")?.toLowerCase() }
+  Closure cleanName = { String str -> str?.trim().replaceAll(~/[\s-\.]/, "-")?.toLowerCase() }
 
 
   /**
